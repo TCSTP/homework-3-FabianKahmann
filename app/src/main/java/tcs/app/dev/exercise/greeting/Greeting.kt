@@ -43,8 +43,8 @@ import androidx.compose.ui.tooling.preview.Preview
  * - [Text](https://developer.android.com/develop/ui/compose/text/)
  */
 @Composable
-fun Greeting(modifier: Modifier = Modifier) {
-
+fun Greeting(name: String, modifier: Modifier = Modifier) {
+    Text(text ="Hello $name", modifier = modifier)
 }
 
 /**
@@ -75,6 +75,16 @@ fun Greeting(modifier: Modifier = Modifier) {
  * ## Resources:
  * - [Preview](https://developer.android.com/develop/ui/compose/tooling/previews)
  */
+
+@Preview(
+    showBackground = true,
+    heightDp = 50,
+    widthDp = 150,
+    fontScale = 1.5f,
+
+    )
+
+@Composable
 fun GreetingPreview() {
 
 }

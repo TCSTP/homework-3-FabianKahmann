@@ -99,5 +99,7 @@ fun ShopScreen(
     modifier: Modifier = Modifier
 ) {
     var cart by rememberSaveable { mutableStateOf(Cart(shop = shop)) }
+    //havent had time the last 2 weeks. I looked at the solution in homework 4 and submitted homework 4
+
 
 }
